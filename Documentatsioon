@@ -1,0 +1,24 @@
+Olin loonud mitu erinevat versiooni, ning siia esitasin enda kõige funktsionaalsema Spring Boot kodutöö. 
+Sellel versioonil on osaliselt funktsionaalne sisendite sisselugemine add.html-ist java PetsListController-isse.
+Olin jätnud sellega edasi töötamise pooleli, kuna sellel oli puudu jäänud liquibase dependancy, mis oli kodutöös technical requirement.
+Üldiselt ei jõudnud kõiki nõutuid frameworkidega tuttavaks saada, piisavalt, et neid töösse lisada. 
+Spetsiifiliselt, ei jõudnud liquibase-iga tutvuda, piisavalt, et see laseks põhiprogrammil tööle minna, seega esitan versiooni, kus seda pole.
+
+add.html ja table.html on pandud template-ideks, kasutades thymeleaf framework-i. Lõin klassi nimega PET, kuhu panna kõik sisendid. 
+Momendil suudab lugeda aind Name ja Code sisendid. Enne kui siit edasi läksin hakkasin liquibase uurima, ning jäingi kinni.
+
+IDEED
+
+Lõplikult kui ma oleks jõudnud kõik sisendid JAVAsse oleks sealt edasi saand neid edastada databasi. 
+JAVAs kaudu oleks saanud luua validation funktsiooni, mis see järel kas returniks, table.html, juhul kui kõik oli õige ja see sai lisatud Databasi,
+või add.html, mille puhul see oleks nähtavalt refreshinud lehte, koos tagastus sõnumiga, et kindlad väljad on puutu, või kas või punane tärnike kindlal lahtril.
+
+Kuna table.html on templatina peaks see iga kord sisestama databasi andmed templati. Oleks saanud teha lihtsa username ja password sisestamiseks template.
+username ja password edaspidi kantakse üle lehelt lehele, mille kaudu saab välja valida kindlad andmed databasist seoses kasutaja andmetega. 
+Seega oleks olnud ka vaja databasi struktuuri natuke teisiti luua. 
+Ma ei jõudnud kuigi H2 databasiga alustada.
+
+Lõplikult jäi aega puudu püüdes täita kõiki technical requiremente. 
+See versioon oli poolei jäetud, kuna olin märganud, et oli välja jäänud liquibase dependancy, mille puhul ma lõin uue versiooni. 
+Ei olnud suuteline seda koos liquibase dependencyga tööle saama, ning ma lõplikult ei jõudnud sellega tutvuda.
+Kool on tihe ja aeg oli lihtsalt piiratud. Kahjuks on funktsionaalsuse osas üsna vähe tehtud.
